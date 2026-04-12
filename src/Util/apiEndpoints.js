@@ -1,4 +1,5 @@
-export const BASE_URL = 'http://localhost:8080/api/v1.0';
+export const BASE_URL =
+  'https://backend-project-production-88bd.up.railway.app/api/v1.0';
 
 const apiEndPoints = {
   FETCH_FILES: `${BASE_URL}/files/my`,
@@ -12,6 +13,7 @@ const apiEndPoints = {
 
   PUBLIC_FILE_VIEW: (id) => `${BASE_URL}/files/public/${id}`,
   PUBLIC_VIEW_LINK: (id) => `${BASE_URL}/files/view/${id}`,
+
   CREATE_ORDER: `${BASE_URL}/payments/create-order`,
   VERIFY_PAYMENT: `${BASE_URL}/payments/verify-payment`,
   TRANSACTIONS: `${BASE_URL}/transactions`,
