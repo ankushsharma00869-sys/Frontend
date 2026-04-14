@@ -133,7 +133,7 @@ function MyFiles() {
 
   // open shaing link modal
   const openShareModal = (fileId) => {
-    const link = `http://localhost:8080/api/v1.0/files/view/${fileId}`;
+    const link = apiEndPoints.PUBLIC_VIEW_LINK(fileId);
 
 
     setShareModal({
@@ -371,7 +371,7 @@ function MyFiles() {
                         <div className="flex justify-center">
                           {file.isPublic ? (
 
-                            <a href={`http://localhost:8080/api/v1.0/files/view/${file.id}`}
+                            <a href={apiEndPoints.PUBLIC_VIEW_LINK(file.id)}
                               target="_blank"
                               rel="noreferrer"
                               className="text-gray-500 hover:text-blue-600"
