@@ -1,9 +1,9 @@
 import React from 'react'
 import { assests } from '../../assets/assets';
 
-const HeroSection = ({openSignIn, openSignUp}) => (
+const HeroSection = ({ openSignIn, openSignUp }) => (
     <div className="landing-page-content realative">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-50 to-indigo-50 opacity-80 z-0 pointer-event-none">    </div>
+        <div className="absolute inset-0 bg-linear-to-r from-purple-50 to-indigo-50 opacity-80 z-0 pointer-event-none">    </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="pt-20 pb-16 sm:pt-24 sm:pb-28 lg:pt-32 lg:pb-28">
                 <div className="text-center">
@@ -20,7 +20,7 @@ const HeroSection = ({openSignIn, openSignUp}) => (
                     <div className="mt-10 max-w-sm mx-auto sm:max-w-none sm:flex sm:justify-center">
                         <div className="space-y-4 sm:space-y-0 sm:mx-auto sm:inline-grid sm:grid-cols-2 sm:gap-5">
                             <button
-                            onClick={() => openSignUp()}
+                                onClick={() => openSignUp()}
                                 className="flex item-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-purple-500 hover:bg-purple-600 md:py-4 md:text-lg md:px-10 transition-all duration-200 shadow-lg hover:shadow-xl">
                                 Get Started</button>
                             <button
@@ -37,21 +37,21 @@ const HeroSection = ({openSignIn, openSignUp}) => (
                 </div>
 
             </div>
-                      
-                       <div className="relative">
-        <div className="aspect-w-60 rounded-lg shadow-xl overflow-hidden">
 
-          <img src={assests.dashboard} alt="Cloud Share dashbord" className="w-full h-full object-cover" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-t from-black opacity-10 rounded-lg"></div>
-      </div>
+            <div className="relative">
+                <div className="aspect-w-60 rounded-lg shadow-xl overflow-hidden">
 
-      <div className="mt-8 text-center"></div>
+                    <img src={assests.dashboard} alt="Cloud Share dashbord" className="w-full h-full object-cover" />
+                </div>
+                <div className="absolute inset-0 bg-linear-to-t from-black opacity-10 rounded-lg"></div>
+            </div>
 
-      <p className="mt-4 text-base text-gray-500">
+            <div className="mt-8 text-center"></div>
 
-        All your file encrypted and stored securey with enterpise-grade security protocols.
-      </p>
+            <p className="mt-4 text-base text-gray-500">
+
+                All your file encrypted and stored securey with enterpise-grade security protocols.
+            </p>
 
 
         </div>
